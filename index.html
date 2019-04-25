@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>aa</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+
+   <link rel="stylesheet" href="browser.css">
+
+<script type ="text/javascript" src="jquery-3.2.1.slim.min.js"> </script>
+<script type ="text/javascript" src="popper.min.js"></script>
+<script type ="text/javascript" src="jquery-3.4.0.min.js"></script>
+    <script src="browser.js"></script>
+</head>
+<body>
+<div id="layout_srch">
+    <div class="row">
+        <div class="col">
+            <a id="a_back_g" href="#"><i class="fa fa-arrow-left my-control" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-10">
+            <form id="form_srch" class="form-inline">
+                <div id="dv_srch" class="form-group">
+                    <input id="inp_query" class="form-control mr-2" value="">
+                    <button id="btn_srch" class="btn btn-success">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                    <label class="form-check-label">
+                        <input id="ckb_mode" type="checkbox" class="form-check-input">
+                        mobile mode
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <a id="a_back_n" href="#"><i class="fa fa-arrow-left my-control" aria-hidden="true" style="float: right"></i></a>
+        </div>
+    </div>
+</div>
+<webview id="ifr_g" src="https://www.google.co.kr/search?q="></webview>
+<webview id="ifr_n" src="https://search.naver.com"></webview>
+</body>
+</html>

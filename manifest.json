@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "webview qq",
+    "version": "0.1.0",
+    "permissions": [
+        "webview"
+    ],
+    "icons": {
+        "16": "16.jpg",
+        "48": "48.jpg",
+        "128": "128.png"
+    },
+    "app": {
+        "background": {
+            "scripts": ["main.js"]
+        }
+    }
+}
